@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Registration_form</title>
+     <style>
+         body{
+                
+          background-color:rgb(248, 155, 248);
+         margin-left :50px;
+
+         }
+        fieldset
+        {
+            border: 5px double darkblue;
+            width: 341px;
+            margin: 450px 432px 321px 412px;
+            background-color:aliceblue;
+            margin-top: 30px;
+            border-radius: 0px 50px;
+            padding-right: 1px;
+            padding-left: 10px;
+          
+        }
+
+
+        fieldset:hover{
+
+            box-shadow: 0px 0px 20px black;
+            transition: all 0s linear 0.23s;
+            
+        }
+        legend
+        {
+             background-color: rgb(5, 248, 248);
+             color: red;
+             border-radius: 0px 30px;
+             text-align: center;
+             font-size: x-large;
+             padding: 10px;
+             border: 5px double darkblue;
+          
+        }    
+        input{
+
+            height: 20px;
+            border-radius: 8px;
+            border:1px solid black;
+        }
+
+        input:hover
+        {
+            height: 30px;
+            border: 2px solid deeppink;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px black;
+            color: royalblue;
+            background-color: lightblue;
+        }
+        ::selection{
+
+            color:rgb(5, 248, 171);
+            background-color: gray;
+            
+        }
+           
+     </style>
+</head>
+<body>
+    
+    <fieldset>
+        <legend> <b>Registration Form </b></legend>
+            <form>
+                <table> 
+                    <tr>
+                         <td> <label> First Name:</label> </td>
+                         <td> <input type="text" placeholder=" First Name"></td>
+                    </tr>
+                    <tr> 
+                         <td> Last Name: </td>
+                         <td> <input type="text" placeholder="Last Name"></td>
+                    </tr>
+                    <tr> 
+                         <td> Email-Id:</td>
+                         <td> <input type="email" placeholder="Email" required></td>
+                    </tr>
+                    <tr>
+                         <td> Password:</td>
+                         <td> <input type="password" placeholder="Password"  pattern=".{6, }"></td>
+                   </tr>
+                    <tr>
+                          <td> Date of Birth:</td>
+                          <td> <input type="date" placeholder="Date of Birth"></td>
+                   </tr> 
+                   <tr>
+                         <td> Age:</td>
+                         <td> <input type="number" placeholder="Age"></td>
+                   </tr>
+
+
+                   <tr>
+                         <td> Phone.No:</td>
+                         <td> <input type="tel" placeholder="Phone.No" maxlength="10"></td>
+                   </tr>
+                    <tr> 
+                        <td> Gender:</td>
+                        <td> <input type="radio" name="balaji" >male
+                             <input type="radio" name="balaji" >Female</td>
+                   </tr>
+                    <tr>
+                         <td> Address: </td>
+                         <td> <textarea placeholder="Enter Your Address"></textarea></td>
+                   </tr>
+
+                    <tr>
+                         <td> Hobbies: </td>
+                         <td> <input type="checkbox"> Sports 
+                               <input type="checkbox"> Dance<br>
+                               <input type="checkbox"> reading
+                               <input type="checkbox"> Music
+                               </td>
+                  </tr>
+                   <tr>
+                        <td> Country </td>
+                        <td><select> 
+                            <option> select Your Country </option>
+                            <option> India </option>
+                            <option> china </option>
+                            <option> USA  </option>
+                            <option> Afghanistan </option>
+                            <option> Srilanka </option>
+                            <option> Russia </option>
+                        </select></td>
+                   </tr>
+                    <tr> 
+                         <td> Upload File</td>
+                         <td> <input type="file"></td>
+                    </tr>
+                    <tr> 
+                         <td> <button> Submit</button></td>
+                         <td> <button> Reset</button></td>
+
+                </table> <br>
+                <td> <marquee> <b> Note:</b> Read the information carefully before fill a Form. The given information should be correct. Form to be filled in English Only.  </marquee></td>
+            </form>
+    </fieldset>
+</body>
+</html>
